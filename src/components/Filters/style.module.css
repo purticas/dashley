@@ -1,0 +1,21 @@
+.filters {
+	> * {
+		margin-bottom: 1em;
+		display: block;
+		margin-right: 1em;
+		@media(--sm) {
+			margin-right: 1.125em;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	@media(--md) {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		button {
+			margin-left: auto;
+		}
+	}
+}

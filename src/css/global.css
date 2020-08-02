@@ -1,0 +1,51 @@
+@import 'normalize.css';
+@import './colors';
+@import './breakpoints';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
+	scroll-behavior: smooth;
+	background: var(--athens);
+	color: var(--coal);
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+	backface-visibility: hidden;
+}
+
+picture, img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+	display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+main {
+	margin-top: 8em;
+	padding: 0 1em;
+	@media(--sm) {
+		padding: 0 2.5em;
+		margin-left: 3.5rem;
+	}
+}
+
+h1 {
+	font-size: 1.5em;
+}
