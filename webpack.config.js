@@ -1,66 +1,65 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = (env, mode) => {
 	return {
-		entry: './src/index.tsx',
-		stats: 'minimal',
-		watch: mode === 'development',
+		entry: "./src/index.tsx",
+		stats: "minimal",
+		watch: mode === "development",
 		output: {
-			path: path.resolve(__dirname, 'dist'),
-			filename: 'bundle.js',
+			path: path.resolve(__dirname, "dist"),
+			filename: "bundle.js",
 		},
 		resolve: {
-			extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+			extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
 		},
 		devServer: {
-			contentBase: path.join(__dirname, 'dist'),
-			port: 3000
+			contentBase: path.join(__dirname, "dist"),
+			port: 3000,
 		},
 		module: {
 			rules: [
 				{
 					test: /\.(ts|tsx)$/,
-					loader: 'awesome-typescript-loader',
+					loader: "awesome-typescript-loader",
 				},
 				{
 					test: /\.js$/,
-					loader: 'source-map-loader',
+					loader: "source-map-loader",
 				},
 				{
 					test: /\.svg$/,
-					use: ['@svgr/webpack'],
+					use: ["@svgr/webpack"],
 				},
+
 				{
 					test: /\.css$/,
 					use: [
-						'style-loader',
-						'css-loader',
+						"style-loader",
+						{ loader: "css-loader", options: { importLoaders: 1 } },
 						{
-							loader: 'postcss-loader',
+							loader: "postcss-loader",
 							options: {
-								modules: true,
+								ident: "postcss",
 								plugins: () => [
-									require('postcss-preset-env')({
-										stage: 0
-									}),
-									require('postcss-partial-import'),
+									require('postcss-custom-media'),
+									require('postcss-preset-env')({stage: 0}),
 									require('autoprefixer'),
-									require('postcss-nested'),
-									require('postcss-custom-media')
-								]
-							}
-						}
-					]
-				}
+									require('postcss-nested')
+								],
+							},
+						},
+					],
+				},
+
 			],
 		},
 		plugins: [
 			new CleanWebpackPlugin(),
 			new HtmlWebpackPlugin({
-				template: path.resolve(__dirname, 'public', 'index.html'),
-			})
+				template: path.resolve(__dirname, "public", "index.html"),
+			}),
 		],
 	};
-}
+};
