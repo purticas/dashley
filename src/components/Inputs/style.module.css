@@ -41,12 +41,13 @@
 	}
 	ul {
 		overflow: hidden;
-		max-height: 0;
+		height: 0;
+		transition: all .5s ease;
 	}
 	li {
 		margin-top: .5em;
 		padding-top: 0.5em;
-		opacity: .9;
+		opacity: .7;
 		transition: opacity .2s ease;
 		&:not(:first-of-type) {
 			border-top: 1px solid #00000022;
@@ -59,7 +60,7 @@
 
 .selectOpen {
 	ul {
-		max-height: 100% !important;
+		height: fit-content !important;
 	}
 	svg {
 		transform: rotate(-180deg);
@@ -92,5 +93,12 @@
 		svg {
 			transform: translateY(.2em);
 		}
+	}
+}
+
+.unlabeled {
+	padding: 1em .6em;
+	svg {
+		top: 1.2em;
 	}
 }

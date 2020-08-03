@@ -38,11 +38,12 @@ svg {
 }
 
 main {
-	margin-top: 8em;
 	padding: 0 1em;
+	margin: 8em 0 8em 0;
 	@media(--sm) {
 		padding: 0 2.5em;
 		margin-left: 3.5rem;
+		margin-bottom: 4em;
 	}
 }
 

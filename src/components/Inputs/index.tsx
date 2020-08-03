@@ -4,7 +4,7 @@ import Icon_arrow from '../../icons/arrow-down.svg';
 import Icon_download from '../../icons/download.svg';
 
 interface selectProps {
-	label: string,
+	label?: string,
 	options: string[]
 }
 
@@ -13,8 +13,8 @@ export const Select = (props:selectProps) => {
 				[active, change] = React.useState(props.options[0]);
 				
 	return (
-		<div className={`${_.select} ${open ? _.selectOpen : ''}`} onClick={() => toggle(!open)}>
-			<label>{props.label}</label>
+		<div className={`${_.select} ${open ? _.selectOpen : ''} ${!props.label ? _.unlabeled : ''}`} onClick={() => toggle(!open)}>
+			{props.label && <label>{props.label}</label>}
 			<span>{active}</span>
 			<Icon_arrow />
 			<ul>
