@@ -41,7 +41,7 @@ module.exports = (env, mode) => {
 							loader: 'postcss-loader',
 							options: {
 								modules: true,
-								plugins: (loader) => [
+								plugins: () => [
 									require('postcss-preset-env')({
 										stage: 0
 									}),
