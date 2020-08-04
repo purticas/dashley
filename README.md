@@ -2,6 +2,7 @@
 ![LICENSE](https://img.shields.io/badge/license-MIT-green)
 # Responsive React Asssesment Task
 The project can be viewed here -> [dashley.netlify.com](https://dashley.netlify.com)
+
 This is an assesment task showcasing a Responsive UI built with React. It has been built with no frameworks other then React(TypeScript) and Webpack. The app utilizes PostCSS with CSS Modules. This enables components to have their styling locally scoped.
 
 ## How To Set Up
