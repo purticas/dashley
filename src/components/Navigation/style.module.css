@@ -131,19 +131,6 @@
 	}
 }
 
-.active {
-	background: var(--shuttle);
-	i {
-		opacity: 1 !important;
-		&:before {
-			bottom: 0 !important;
-			@media(--sm) {
-				left: 0 !important;
-			}
-		}
-	}
-}
-
 .toggleOpen {
 	transform: scaleX(-1);
 }

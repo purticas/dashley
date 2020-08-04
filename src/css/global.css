@@ -49,12 +49,14 @@ picture, img {
 }
 
 svg {
-	display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+	&:not(.recharts-surface) {
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		stroke-width: 0;
+		stroke: currentColor;
+		fill: currentColor;
+	}
 }
 
 main {
@@ -69,4 +71,17 @@ main {
 
 h1 {
 	font-size: 1.5em;
+}
+
+.active {
+	background: var(--shuttle);
+	i {
+		opacity: 1 !important;
+		&:before {
+			bottom: 0 !important;
+			@media(--sm) {
+				left: 0 !important;
+			}
+		}
+	}
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink as Link} from 'react-router-dom';
 import _ from './style.module.css';
 import Icon_menu from '../../icons/menu.svg';
 import Icon_home from '../../icons/home.svg';
@@ -15,19 +15,13 @@ export default () => {
 			</button>
 			<ul>
 				<li>
-					<Link to='/' data-tooltip='Dashboard'>
+					<Link exact={true} to='/' data-tooltip='Insights'>
 						<i><Icon_home /></i>
 						<span>Dashboard</span>
 					</Link>
 				</li>
 				<li>
-					<Link to='/track-order' data-tooltip='Track Order'>
-						<i><Icon_marker /></i>
-						<span>Track Order</span>
-					</Link>
-				</li>
-				<li>
-					<Link to='/orders' className={_.active} data-tooltip='Completed Orders'>
+					<Link exact={true} to='/orders' data-tooltip='Completed Orders'>
 						<i><Icon_receipt /></i>
 						<span>Completed Orders</span>
 					</Link>
