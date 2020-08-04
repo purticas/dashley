@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Navigation from './components/Navigation';
-import Dashboard from './templates/Dashboard';
 import Orders from './templates/Orders';
 import './css/global.css';
 
