@@ -1,7 +1,7 @@
 {
-  "name": "orderly",
+  "name": "dashley",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dashley is an assesment task showcasing a Responsive UI built with React",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js",
