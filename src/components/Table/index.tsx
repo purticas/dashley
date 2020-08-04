@@ -42,16 +42,16 @@ export default class Table extends React.Component {
 					</tr>
 				</thead>
 				<tbody>
-					<Row id={123456} delivered='12 Aug 12:30' store='Arbeys' elapsed={20} total='R 1200.00' status='Undeliverable' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Shake Shack' elapsed={24} total='R 1200.00' status='Completed' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Wendys' elapsed={25} total='R 1200.00' status='Completed' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={30} total='R 1200.00' status='Undeliverable' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={60} total='R 1200.00' status='Cancelled' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Arbeys' elapsed={20} total='R 1200.00' status='Undeliverable' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Shake Shack' elapsed={24} total='R 1200.00' status='Completed' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Wendys' elapsed={25} total='R 1200.00' status='Completed' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={30} total='R 1200.00' status='Undeliverable' />
-					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={60} total='R 1200.00' status='Cancelled' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Arbeys' elapsed={20} total='$1200.00' status='Undeliverable' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Shake Shack' elapsed={24} total='$1030.00' status='Completed' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Wendys' elapsed={25} total='$1230.00' status='Completed' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={30} total='$1400.00' status='Undeliverable' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={60} total='$1100.00' status='Cancelled' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Arbeys' elapsed={20} total='$1300.00' status='Undeliverable' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Shake Shack' elapsed={24} total='$1500.00' status='Completed' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Wendys' elapsed={25} total='$1530.00' status='Completed' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={30} total='$1200.00' status='Undeliverable' />
+					<Row id={123456} delivered='12 Aug 12:30' store='Chipotle' elapsed={60} total='$2100.00' status='Cancelled' />
 				</tbody>
 				<tfoot>
 					<tr>
