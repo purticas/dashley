@@ -1,5 +1,0 @@
-- Close menu from body click
-- Move body when menu opens
-- Move tooltip onto Icon
-- Close Select when clicking outside
-- Replace search icon

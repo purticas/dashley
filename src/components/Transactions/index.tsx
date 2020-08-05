@@ -38,22 +38,22 @@ export default () => (
 				Transactions
 			</h2>
 		</div>
-		<div className={_.body} style={{ width: "100%", height: 355 }}>
-			<ResponsiveContainer>
-			<BarChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{top: 5, right: 30, left: 20, bottom: 5,}}
-        barSize={20}
-      >
-        <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-        <YAxis /> 
-        <Tooltip />
-        <Legend />
-        <CartesianGrid strokeDasharray="3 3" />
-        <Bar dataKey="pv" fill="#616263" background={{ fill: '#eee' }} />
-      </BarChart>
+		<div className={_.body} style={{ height: 355 }}>
+			<ResponsiveContainer width="99%" aspect={3}>
+				<BarChart
+					width={500}
+					height={300}
+					data={data}
+					margin={{top: 5, right: 30, left: 20, bottom: 5,}}
+					barSize={20}
+				>
+					<XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
+					<YAxis /> 
+					<Tooltip />
+					<Legend />
+					<CartesianGrid strokeDasharray="3 3" />
+					<Bar dataKey="pv" fill="#616263" background={{ fill: '#eee' }} />
+				</BarChart>
 			</ResponsiveContainer>
 		</div>
 	</article>

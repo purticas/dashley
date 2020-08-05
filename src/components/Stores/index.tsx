@@ -25,8 +25,8 @@ export default () => (
 		<div className={_.head}>
 			<h2><Icon_store />Stores</h2>
 		</div>
-		<div className={_.body} style={{width: '100%', height: 325}}>
-			<ResponsiveContainer>
+		<div className={_.body} style={{height: 325}}>
+			<ResponsiveContainer width="99%" aspect={3}>
 				<AreaChart
 					width={500}
 					height={400}
