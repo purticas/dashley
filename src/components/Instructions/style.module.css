@@ -40,7 +40,7 @@
 	code {
 		background: var(--shuttle);
 		color: white;
-		padding: .25em;
+		padding: .2em .5em;
 		border-radius: 5px;
 	}
 }
