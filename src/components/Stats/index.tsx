@@ -1,11 +1,11 @@
 import React from 'react';
 import _ from './style.module.css';
-import Stores from '../Stores';
-import Transactions from '../Transactions';
+import Welcome from '../Welcome';
+import Instructions from '../Instructions';
 
 export default () => (
 	<section className={_.stats}>
-		<Stores />
-		<Transactions />
+		<Welcome />
+		<Instructions />
 	</section>
 );

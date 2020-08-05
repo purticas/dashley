@@ -1,4 +1,4 @@
-.stores {
+.welcome {
 	background: white;
 	border-radius: 5px;
 	border: 1px solid #00000022;
@@ -25,5 +25,5 @@
 
 .body {
 	border-top: 1px solid #00000022;
-	padding: 2em 1.5em;
+	padding: 1em 1.5em;
 }

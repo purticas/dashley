@@ -1,4 +1,4 @@
-.transactions {
+.instructions {
 	background: white;
 	border-radius: 5px;
 	border: 1px solid #00000022;
@@ -25,5 +25,22 @@
 
 .body {
 	border-top: 1px solid #00000022;
-	padding: 2em 1.5em;
+	padding: 1em 1.5em;
+	a {
+		text-decoration: none;
+		color: cornflowerblue;
+		transition: all .25s ease;
+		&:hover {
+			color: currentColor;
+		}
+	}
+	li {
+		margin: 1em 0;
+	}
+	code {
+		background: var(--shuttle);
+		color: white;
+		padding: .25em;
+		border-radius: 5px;
+	}
 }
