@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import url("https://use.typekit.net/gex7ewv.css");
 
 :root {
   --mercury: #E8E8E8;
@@ -39,7 +40,7 @@ body {
 	background: var(--athens);
 	color: var(--coal);
   font-weight: 400;
-  font-family: Helvetica, sans-serif;
+  font-family: muli, sans-serif;
 	backface-visibility: hidden;
 }
 

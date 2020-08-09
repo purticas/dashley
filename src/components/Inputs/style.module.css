@@ -3,12 +3,16 @@
 	width: 100%;
 	background: white;
 	display: inline-block;
-	border: 1px solid #00000033;
 	border-radius: 7px;
+	border-left: 1px solid #00000033;
+	border-right: 1px solid #00000033;
+	border-top: 1px solid #00000033;
+	border-bottom: 1px solid #00000033;
 	padding: .5em .8em;
 	display: inline-flex;
 	flex-direction: column;
 	transition: box-shadow .4s cubic-bezier(0.33, 1, 0.68, 1);
+	z-index: 10;
 	&:hover {
 		box-shadow: 0 7px 12px rgba(0,0,0,.04);
 	}
@@ -40,17 +44,31 @@
 		list-style: none;
 	}
 	ul {
-		overflow: hidden;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: calc(100% + 2px);
 		height: 0;
+		overflow: hidden;
+		background: white;
 		transition: all .5s ease;
+		border-left: 1px solid #00000033;
+		border-right: 1px solid #00000033;
+		border-radius: 0 0 7px 7px;
+		box-shadow: 0 7px 12px rgba(0,0,0,.04);
 	}
 	li {
-		margin-top: .5em;
 		padding-top: 0.5em;
+		margin: .5em .9em 0 .9em;
+		padding: 0.5em 0 0 0;
 		opacity: .7;
 		transition: opacity .2s ease;
 		&:not(:first-of-type) {
 			border-top: 1px solid #00000022;
+		}
+		&:last-of-type {
+			margin-bottom: 1em;
 		}
 		&:hover {
 			opacity: .7;
@@ -59,8 +77,12 @@
 }
 
 .selectOpen {
+	border-bottom: none !important;
+	border-radius: 7px 7px 0 0 !important;
 	ul {
 		height: fit-content !important;
+		border-radius: 0 0 7px 7px;
+		border-bottom: 1px solid #00000033;
 	}
 	svg {
 		transform: rotate(-180deg);
